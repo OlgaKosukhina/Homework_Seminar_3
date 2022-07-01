@@ -6,7 +6,7 @@
 int GetNumber(string message)
 {
     int result = 0;
-    string errorMessage = "Вы ввели не число. Введите корректное число.";
+    string errorMessage = "You input not a number. Please input the correct number.";
 
     while (true)
     {
@@ -33,5 +33,5 @@ void Cube(int number)
     }
 }
 
-int number = GetNumber("Введите число");
+int number = GetNumber("Insert number");
 Cube(number);
