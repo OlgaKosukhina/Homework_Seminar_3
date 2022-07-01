@@ -7,7 +7,7 @@ A (7,-5, 0); B (1,-1,9) -> 11.53
 int GetNumber(string message)
 {
     int result = 0;
-    string errorMessage = "Вы ввели не число. Введите корректное число.";
+    string errorMessage = "You input not a number. Please input the correct number";
 
     while (true)
     {
@@ -26,12 +26,12 @@ int GetNumber(string message)
     return result;
 }
 
-int x1 = GetNumber("Введите координату x первой точки");
-int y1 = GetNumber("Введите координату y первой точки");
-int z1 = GetNumber("Введите координату z певрой точки");
-int x2 = GetNumber("Введите координату x второй точки");
-int y2 = GetNumber("Введите координату y второй точки");
-int z2 = GetNumber("Введите координату z второй точки");
+int x1 = GetNumber("Insert coordinate x of first point");
+int y1 = GetNumber("Insert coordinate y of first point");
+int z1 = GetNumber("Insert coordinate z of first point");
+int x2 = GetNumber("Insert coordinate x of second point");
+int y2 = GetNumber("Insert coordinate y of second point");
+int z2 = GetNumber("Insert coordinate z of second point");
 
 double distance = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2));
 Console.WriteLine($"The distance between two points is {distance}");
